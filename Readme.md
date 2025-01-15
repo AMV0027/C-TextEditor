@@ -42,8 +42,8 @@ To run this project, you need:
 1. **Clone this repository**:
 
    ```bash
-   git clone https://github.com/yourusername/simple-text-editor.git
-   cd simple-text-editor
+   git clone https://github.com/AMV0027/C-TextEditor.git
+   cd C-TextEditor
    ```
 
 2. **Compile the program**:
@@ -51,7 +51,7 @@ To run this project, you need:
    Compile the C code with `gcc` and the `ncurses` library. This command will output the editor as `miv`.
 
    ```bash
-   gcc text_editor.c -lncurses -o miv
+   gcc main -lncurses -o <your preferred editor name>
    ```
 
 3. **Move the compiled editor to a directory in your PATH**:
@@ -59,7 +59,7 @@ To run this project, you need:
    To be able to run the editor from any location on your system, move it to a directory that's included in your PATH, such as `/usr/local/bin`.
 
    ```bash
-   sudo mv miv /usr/local/bin/
+   sudo mv <your editor name> /usr/local/bin/
    ```
 
 4. **Make the editor executable**:
@@ -67,7 +67,7 @@ To run this project, you need:
    Ensure the editor file is executable.
 
    ```bash
-   sudo chmod +x /usr/local/bin/miv
+   sudo chmod +x /usr/local/bin/ <your editor name>
    ```
 
 ---
@@ -79,7 +79,7 @@ You can now run the text editor from the command line like `vim` or `nano`.
 1. **To start editing a file:**
 
    ```bash
-   miv myfile.txt
+    <your editor name> myfile.txt
    ```
 
    - If `myfile.txt` exists, it will open for editing.
@@ -137,13 +137,13 @@ Follow these steps:
 2. **Move the editor to `/usr/local/bin`**:
 
    ```bash
-   sudo mv miv /usr/local/bin/
+   sudo mv  <your editor name> /usr/local/bin/
    ```
 
 3. **Ensure the file is executable**:
 
    ```bash
-   sudo chmod +x /usr/local/bin/miv
+   sudo chmod +x /usr/local/bin/ <your editor name>
    ```
 
    This will make the editor accessible to all users on the system, and they can simply call `miv` from the command line to open it.
